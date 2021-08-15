@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Survey Form.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="title">freeCodeCamp Survey Form </h1>
+        <div >
+            <p id="description" class="thank-you">Thank you for taking the time to help us improve the platform</p>
+        </div>
+    </header>
+    <div class="suvery-container">
+        <div id="survey-form">
+
+            <label for="name" id="name-label">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email" id="email-label">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+
+            <label for="age" id="number-label">Age <span class="clue">(optional)</span></label>
+            <input type="number" min="100" max = "200" class="line" id="number" name="age" placeholder="Age">
+
+            <label for="dropdown">Which option best describes your current role ?</label>
+            <select id="dropdown" name="role" required="">
+                <option disabled="" selected="" value="">Select current role</option>
+                <option value="student">Student</option>
+                <option value="job">Full Time Job</option>
+                <option value="learner">Full Time Learner</option>
+                <option value="preferNo">Prefer not to say</option>
+                <option value="other">Other</option>
+            </select>
+            <div class="line">Would you recommend freeCodeCamp to a friend?</div>
+            <form id="display-block">
+                <input type="radio" id="Definitely" name="recommend" value="Definitely">
+                <label for="Definitely">Definitely</label><br>
+                <input type="radio" id="Maybe" name="recommend" value="Maybe">
+                <label for="Maybe">Maybe</label><br>
+                <input type="radio" id="Notsure" name="recommend" value="Notsure">
+                <label for="Notsure">Not sure</label><br>
+            </form>
+            <select name="favorite_feature" id="dropdown">
+                <option disabled="" value="" selected="">Select an option</option>
+                <option value="challenges">Challenges</option>
+                <option value="project">Project</option>
+                <option value="community">Community</option>
+                <option value="open_source">Open Source</option>
+            </select>
+            <div class="line">What would you like to see improved? <span class="clue">(Check all that apply)</span></div>
+            <form action="" id="checkboxes">
+                <input type="checkbox" id="front-end-project" name="major" value="front_end">
+                <label for="front-end-project"> Front-end Projects </label><br>
+
+                <input type="checkbox" id="back-end-project" name="major" value="back-end">
+                <label for="back-end-project"> Back-end Projects </label><br>
+
+                <input type="checkbox" id="challenges" name="major" value="challenges">
+                <label for="challenges"> Challenges </label><br>
+
+                <input type="checkbox" id="open_source" name="major" value="open_source">
+                <label for="open_source"> Open Source Community </label><br>
+
+                <input type="checkbox" id="gitter-help-rooms" name="major" value="gitter-help-rooms">
+                <label for="gitter-help-rooms"> Gitter help rooms </label><br>
+                <div class="line">Any comments or suggestions?</div>
+                <textarea placeholder="Enter your comment here..." name="" id="text_area" cols="50" rows="6"></textarea>
+                <button id="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
